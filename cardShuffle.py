@@ -6,7 +6,7 @@ duplicate_times = 0
 
 for i in range(10000):
     for i in range(100):
-        cards = sorted(random.sample(range(1, 13), 8))
+        cards = sorted(random.sample(range(1, 26), 8))
         card_set = tuple(cards)
         if card_set in seen_sets:
             duplicated = True
