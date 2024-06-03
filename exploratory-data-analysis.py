@@ -27,4 +27,14 @@ for row in first_table.tbody.find_all('tr'):
         rank = columns[0].text.strip()
         country = columns[1].text.strip()
         population = columns[2].text.strip()
-        
+        smartphone_users = columns[3].text.strip()
+        smartphone_penetration = columns[4].text.strip()
+
+        df = df.append({'Rank': rank,
+                        'Country': country,
+                        'Population': population,
+                        'Smartphone_users': smartphone_users,
+                        'Smartphone_penetration': smartphone_penetration},
+                        ignore_index=True)
+
+print(df.head())
