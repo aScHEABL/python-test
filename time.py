@@ -12,7 +12,7 @@
 
 from datetime import datetime, timedelta
 timezone = 28800
-current_unix = 1680318000
+current_unix = 1680249600
 local_time = current_unix + timezone
 formatted_current_time = datetime.utcfromtimestamp(local_time).strftime("%A %Y-%m-%d %H:%M:%S")
 
